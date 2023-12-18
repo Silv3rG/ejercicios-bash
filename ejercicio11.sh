@@ -8,6 +8,10 @@ do
 echo "Adivina el numero entre 1 y 100"
 read num
 
+if [[ $num -eq 0 ]]; then
+   echo "Has perdido :("
+   break
+else
 
    if [[ $num -eq $numero ]]; then
        echo "Enhorabuena"
@@ -16,5 +20,5 @@ read num
    else
        echo "El numero introducido es menor"
    fi
-
+fi
 done
