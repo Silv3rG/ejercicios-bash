@@ -1,18 +1,8 @@
 #!/bin/bash
 
-function sumar(){
- read -p "Dime un numero" num1
- read -p "Dime otro numero"
-}
-
-
-
-
-
-
-
-
-
+#Imprimir por pantalla
+read -p "Dime un numero" num1
+read -p "Dime otro numero" num2
 
 
 echo "1 - Sumar"
@@ -23,7 +13,13 @@ echo "0 - Salir"
 
 read -p "Selecciona una opcion: " opcion
 
+#funciones
 
+function sumar(){
+ (($num1 + $num2))
+}
+
+#
 case $opcion in
       1)
        ;;
